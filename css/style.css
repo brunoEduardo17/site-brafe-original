@@ -1,10 +1,4 @@
-/*BREAKPOINTS
-
-960
-
-740
-
-*/
+/*BREAKPOINTS - 960 - 740 */
 
 /*Reset*/
 * {
@@ -62,6 +56,16 @@ body {
 }
 
 @media only screen and (max-width: 739px) {
+    .menu {
+        text-align: center;
+    }
+
+    a.menu-logo {
+        float: none;
+        margin: 0 auto;
+
+    }
+
     .menu-nav {
         float: none;
         clear: both;
@@ -166,17 +170,19 @@ body {
     .sobre-container {
         max-width: 720px;
     }
+
     .sobre-item {
         width: 340px
     }
 }
 
-@media only screen and (max-width: 739px){
-    .sobre-container{
-        max-width:300px
+@media only screen and (max-width: 739px) {
+    .sobre-container {
+        max-width: 300px
     }
-    .sobre-item{
-        width:300px;
+
+    .sobre-item {
+        width: 300px;
         margin: 0 auto;
     }
 }
@@ -264,16 +270,18 @@ body {
     .produtos-container {
         max-width: 720px;
     }
+
     .produtos-item {
         width: 220px;
     }
 }
 
-@media only screen and (max-width: 739px){
-    .produtos-container{
-        max-width:300px
+@media only screen and (max-width: 739px) {
+    .produtos-container {
+        max-width: 300px
     }
-    .produtos-item{
+
+    .produtos-item {
         margin: 0px auto 20px auto;
     }
 }
@@ -331,6 +339,29 @@ body {
     border: 3px solid;
     color: #252525;
     padding: 10px 20px;
+}
+
+@media only screen and (min-width: 739px) and (max-width: 980px) {
+    .locais {
+        max-width: 720px
+    }
+
+    .locais-item>div,
+    .locais-item img {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .locais {
+        max-width: 300px
+    }
+
+    .locais-item>div,
+    .locais-item img {
+        width: 300px;
+        margin: 0;
+    }
 }
 
 
@@ -402,6 +433,33 @@ body {
     cursor: pointer;
 }
 
+@media only screen and (min-width: 739px) and (max-width: 980px) {
+
+    .assine-container {
+        max-width: 720px;
+    }
+
+    .assine-info,
+    .assine form,
+    .assine input {
+        width: 340px;
+    }
+}
+
+@media only screen and (max-width: 739px) {
+    .assine-container {
+        max-width: 300px;
+    }
+
+    .assine-info,
+    .assine form,
+    .assine input {
+        width: 300px;
+        margin: 10 0 0 0;
+    }
+}
+
+
 
 /*FOOTER */
 .footer {
@@ -432,4 +490,20 @@ body {
     float: right;
     margin: 0 10px;
     display: block;
+}
+
+@media only screen and (max-width: 739px) {
+    .footer-container {
+        max-width: 300px;
+    }
+
+    .footer p {
+        float: none;
+        margin: 0;
+    }
+
+    .footer img {
+        float: none;
+        margin: 20px 0;
+    }
 }
